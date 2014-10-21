@@ -66,6 +66,7 @@ function addToUpTo(max) {
 
 // Letter Capitalize
 // For this challenge you will be capitalizing certain characters in a string.
+//
 // Using the JavaScript language, have the function LetterCapitalize(str) 
 // take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space. 
 
@@ -177,6 +178,7 @@ function alphabetSoup(str) {
 
 // AB Check
 // For this challenge you will determine if two characters are separated a specific way in the string.
+//
 // Using the JavaScript language, have the function ABCheck(str) take the str parameter being passed and 
 // return the string true if the characters a and b are separated by exactly 3 places anywhere in the string 
 // at least once (ie. "lane borrowed" would result in true because there is exactly three characters between a and b).
