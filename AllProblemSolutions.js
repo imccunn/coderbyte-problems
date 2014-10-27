@@ -301,6 +301,27 @@ function isPalindrom(str) {
 // multiplied by some constant or common ratio. Arithmetic example: [2, 4, 6, 8] and Geometric example: [2, 6, 18, 54]. 
 // Negative numbers may be entered as parameters, 0 will not be entered, and no array will contain all the same elements. 
 
+function arithGeo(arr) {
+	var diff = [],
+		ret = '-1';
+
+	for (var i = 0; i < arr.length-1; i++) {
+		diff.push(arr[i+1] - arr[i]);
+	}
+
+	for (var i = 0; i < diff.length-1; i++) {
+		if (diff[i] === diff[i+1]) {
+			ret = 'Arithmetic';
+		} else if (diff[i+1] % diff[i] === 0) {
+				ret = 'Geometric';
+			} else {
+				ret = -1;
+			}
+
+	}
+	return ret;
+}
+
 // Array Addition I
 // For this challenge you will determine if numbers in an array can add up to a certain number in the array.
 
