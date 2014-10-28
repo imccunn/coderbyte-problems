@@ -324,6 +324,31 @@ function arithGeo(arr) {
 
 // Array Addition I
 // For this challenge you will determine if numbers in an array can add up to a certain number in the array.
+//
+// Using the JavaScript language, have the function ArrayAdditionI(arr) take the array of numbers stored in 
+// arr and return the string true if any combination of numbers in the array can be added up to equal the largest 
+// number in the array, otherwise return the string false. For example: if arr contains [4, 6, 23, 10, 1, 3] the 
+// output should return true because 4 + 6 + 10 + 3 = 23. The array will not be empty, will not contain all the same 
+// elements, and may contain negative numbers. 
+
+function arrayAdditionI(arr) { //not correct
+	var large = 0;
+	var sum = 0;
+	for (var i = 0; i < arr.length; i++) {
+		large = arr[i] > large ? arr[i] : large; 
+	}
+
+	
+	for (var i = 0; i < arr.length; i++) {
+		if (sum === large) {
+			return 'true';
+		} else {
+			sum += arr[i];
+		}
+	}
+
+	return 'false';
+}
 
 // Letter Count I
 // For this challenge you will determine which word has the greatest number of repeated letters.
