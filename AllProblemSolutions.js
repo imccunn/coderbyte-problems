@@ -212,9 +212,9 @@ function vowelCount(str) {
 			case 'e':
 			case 'E':
 			case 'i':
-			case 'e':
+			case 'I':
 			case 'o':
-			case 'e':
+			case 'O':
 			case 'u': 
 			case 'U': numVowels++;
 				break;
